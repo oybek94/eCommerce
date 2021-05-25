@@ -1,0 +1,96 @@
+:root {
+   /* FONTS */
+   --header-font: "Poppins", "Arial", sans-serif;
+   --secondary-font: "Open Sans", "Arial", sans-serif;
+
+   /* COLORS */
+   --primary-color: #151515;
+   --secondary-color: #6A983C;
+   --adittional-color-c3: #D0A866;
+   --adittional-color-c4: #E5704B;
+   --adittional-color-c5: #37D0D6;
+}
+
+/* GLOBAL CLASSES */
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   max-width: 100%;
+   font-family: var(--header-font);
+   font-size: 14px;
+   line-height: 135%;
+   color: var(--primary-color);
+}
+
+h1 {
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 140%;
+}
+
+h2 {
+   font-weight: 600;
+   font-size: 26px;
+   line-height: 39px;
+}
+
+h3 {
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 33px;
+}
+
+h4 {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 27px;
+}
+
+h5 {
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 22px;
+}
+
+h6 {
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+}
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.lock {
+   overflow: hidden;
+}
+
