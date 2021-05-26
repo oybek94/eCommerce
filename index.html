@@ -38,30 +38,38 @@
          </div>
 
          <div class="top-header__content">
-            <a class="logo" href="index.html">
-               <img src="/img/icons/logo.png" alt="freshnesecom" width="177" height="18">
+            <a class="logo top-header__content-logo" href="index.html">
+               <img class="top-header__content-logo__icon" src="/img/icons/logo.png" alt="freshnesecom" width="177"
+                  height="18">
             </a>
 
             <form class="top-header__form">
                <select class="select-form" name="select-form">
-                  <option value="all">All categories</option>
-                  <option value="Bakery">Bakery</option>
-                  <option value="Fruit and vegetables">Fruit and vegetables</option>
-                  <option value="all">Meat and fish</option>
-                  <option value="Drinks">Drinks</option>
-                  <option value="Kitchen">Kitchen</option>
-                  <option value="Special nutrition">Special nutrition</option>
-                  <option value="Pharmacy">Pharmacy</option>
-                  <option value="Baby">Baby</option>
-                  <option value="Carrots">Carrots</option>
-                  <option value="Tomatoes">Tomatoes</option>
-                  <option value="Potatoes">Potatoes</option>
-                  <option value="Chicken">Chicken</option>
-                  <option value="Pork">Pork</option>
+                  <option class="select-form__option" value="all">All categories</option>
+                  <option class="select-form__option" value="Bakery">Bakery</option>
+                  <option class="select-form__option" value="Fruit and vegetables">Fruit and vegetables</option>
+                  <option class="select-form__option" value="all">Meat and fish</option>
+                  <option class="select-form__option" value="Drinks">Drinks</option>
+                  <option class="select-form__option" value="Kitchen">Kitchen</option>
+                  <option class="select-form__option" value="Special nutrition">Special nutrition</option>
+                  <option class="select-form__option" value="Pharmacy">Pharmacy</option>
+                  <option class="select-form__option" value="Baby">Baby</option>
+                  <option class="select-form__option" value="Carrots">Carrots</option>
+                  <option class="select-form__option" value="Tomatoes">Tomatoes</option>
+                  <option class="select-form__option" value="Potatoes">Potatoes</option>
+                  <option class="select-form__option" value="Chicken">Chicken</option>
+                  <option class="select-form__option" value="Pork">Pork</option>
                </select>
-               <input class="top-header__search" type="search">
+               <span class="vertical-line"></span>
+               <input class="top-header__search" type="search" placeholder="Search Products, categories ...">
                <button class="top-header__search-btn"></button>
             </form>
+
+            <div class="top-header__widgets">
+               <button class="search widget" type="button"></button>
+               <button class="personal-cabinet widget" type="button"></button>
+               <button class="basket widget" type="button"></button>
+            </div>
          </div>
       </div>
    </header>

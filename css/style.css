@@ -159,6 +159,99 @@ img {
    color: var(--adittional-color-c4);
 }
 
+/* TOP NAVBAR CONTENT */
+
+.top-header__content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 40px 0;
+   width: auto;
+}
+
+.top-header__content-logo {
+   margin-right: 10px;
+   flex-shrink: 0;
+}
+
+.top-header__form {
+   display: flex;
+   align-items: center;
+   margin-right: 10px;
+   padding: 10px 16px;
+   background: #F9F9F9;
+   border: 1px solid #D1D1D1;
+   box-sizing: border-box;
+   border-radius: 12px;
+}
+
+.select-form {
+   border: none;
+   background-color: transparent;
+   margin-right: 24px;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 22px;
+   width: 130px;
+}
+
+.vertical-line {
+   height: 20px;
+   width: 1px;
+   background-color: #d1d1d1;
+   margin-right: 24px;
+}
+
+.top-header__search {
+   width: 262px;
+   margin-right: 12px;
+   font-family: var(--secondary-font);
+   font-size: 14px;
+   line-height: 19px;
+   color: var(--primary-color);
+   background-color: transparent;
+   border: none;
+}
+
+.top-header__search-btn {
+   width: 16px;
+   height: 16px;
+   background: url("/img/icons/search-icon.svg") no-repeat center center;
+   border: none;
+}
+
+.top-header__widgets {
+   display: flex;
+   align-items: center;
+}
+
+.widget {
+   width: 24px;
+   height: 24px;
+   border: none;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-color: transparent;
+}
+
+.widget:not(:last-child) {
+   margin-right: 40px;
+}
+
+.search {
+   display: none;
+   background-image: url("/img/icons/search-icon.svg");
+   background-size: contain;
+}
+
+.personal-cabinet {
+   background-image: url("/img/icons/person-icon.svg");  
+}
+
+.basket {
+   background-image: url("/img/icons/basket-icon.svg");
+}
+
 
 
 
@@ -178,11 +271,28 @@ img {
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-
+   .top-header__search {
+      width: calc(150px + 80 * (100vw / 1200));
+   }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+   .top-header__search,
+   .vertical-line {
+      display: none;
+   }
+}
+
+@media (max-width: 550px) {
+   .top-header__form {
+      display: none;
+   }
+
+   .search {
+      display: block;
+   }
+
 
 }
 
@@ -191,9 +301,15 @@ img {
    .navbar-top {
       display: none;
    }
+
+   .widget:not(:last-child) {
+      margin-right: 20px;
+   }
 }
 
 /* Iphone 5 */
 @media (max-width: 320px) {
-
+   .widget:not(:last-child) {
+      margin-right: 10px;
+   }
 }
