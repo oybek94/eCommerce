@@ -105,11 +105,14 @@ img {
 
 /* TOP NAVBAR */
 .navbar-top {
+   padding: 16px 0;
+   border-bottom: 1px solid rgba(21, 21, 21, 0.05);
+}
+
+.navbar-top__container {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 16px 0;
-   border-bottom: 1px solid rgba(21, 21, 21, 0.05);
 }
 
 .navbar-top__contact-text,
@@ -162,11 +165,15 @@ img {
 /* TOP NAVBAR CONTENT */
 
 .top-header__content {
+width: auto;
+   padding: 40px 0;
+}
+
+.top-header__content-container {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 40px 0;
-   width: auto;
+   
 }
 
 .top-header__content-logo {
@@ -250,6 +257,29 @@ img {
 
 .basket {
    background-image: url("/img/icons/basket-icon.svg");
+}
+
+/* TOP NAVIGATION */
+
+.top-menu {
+   padding: 16px 0;
+   background-color: #F9F9F9;
+}
+.top-menu__list {
+   display: flex;
+   align-items: center;
+   padding: 0;
+}
+
+.top-menu__link:not(:last-child) {
+   margin-right: 40px;
+}
+
+.top-menu__list
+
+.top-menu__item {
+}
+.top-menu__link {
 }
 
 
