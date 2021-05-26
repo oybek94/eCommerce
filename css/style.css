@@ -448,9 +448,7 @@ img {
       border-bottom: none;
       border-top: 1px solid rgba(21, 21, 21, 0.05);
    }
-   .navbar-top__list {
-      flex-direction: column;
-   }
+  
 
    /* TOP MENU */
 
@@ -463,7 +461,16 @@ img {
    .top-menu__list {
       flex-direction: column;
       align-items: flex-start;
+      padding-left: 20px;
    }
+
+   .top-menu__item {
+      width: 96%;
+   }
+
+   .navbar-top__item:not(:last-child) {
+      margin-right: 14px;
+  }
 
    /* BURGER MENU */
 
@@ -519,6 +526,16 @@ img {
 
    .widget:not(:last-child) {
       margin-right: 20px;
+   }
+}
+
+@media (max-width: 370px) {
+   .navbar-top__list {
+      flex-direction: column;
+   }
+
+   .top-header__widgets {
+      display: none;
    }
 }
 
