@@ -181,6 +181,7 @@ img {
 }
 
 .top-header__content-container {
+   position: relative;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -195,7 +196,7 @@ img {
    position: relative;
 }
 
-.top-header__content-logo > .top-header__widgets {
+.top-header__content-logo>.top-header__widgets {
    display: none;
 }
 
@@ -454,14 +455,16 @@ img {
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-   
+
    /* BURGER MENU */
 
    .top-header__burger {
+      position: absolute;
       display: block;
-      position: relative;
-      width: 30px;
-      height: 20px;
+      width: 25px;
+      height: 14px;
+      top: 6px;
+      right: 15px;
       z-index: 4;
    }
 
@@ -471,7 +474,7 @@ img {
       width: 100%;
       height: 2px;
       right: 0;
-      top: 9px;
+      top: 6px;
       transition: all .3s ease;
    }
 
@@ -500,12 +503,12 @@ img {
 
    .top-header__burger.active::before {
       transform: rotate(45deg);
-      top: 9px;
+      top: 6px;
    }
 
    .top-header__burger.active::after {
       transform: rotate(-45deg);
-      bottom: 9px;
+      bottom: 6px;
    }
 
 
@@ -519,7 +522,7 @@ img {
       margin-right: 0;
    }
 
-   .navbar-top__contact-text, 
+   .navbar-top__contact-text,
    .tel-number {
       margin-right: 8px;
    }
@@ -529,58 +532,56 @@ img {
    .top-header__content-logo {
       display: flex;
       justify-content: space-between;
-      width: 100%;  
+      width: 100%;
    }
 
    .top-header__content-logo__icon {
       height: 100%;
    }
 
-   .top-header__content-logo > .top-header__widgets {
+   .top-header__content-logo>.top-header__widgets {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: space-between;
-   } 
+   }
 
    .search {
       display: block;
    }
-   
+
    .widget:not(:last-child) {
       margin-right: 10px;
-  }
+   }
 
-  /* TOP HEADER FORM */
+   /* TOP HEADER FORM */
 
-  .top-header__form {
-     width: 100%;
-  }
+   .top-header__form {
+      width: 100%;
+      margin-right: 0;
+   }
 
-  .vertical-line,
-  .top-header__search,
-  .top-header__search-btn {
-     display: none;
-  }  
+   .vertical-line,
+   .top-header__search,
+   .top-header__search-btn {
+      display: none;
+   }
 
-  .select-form {
-     width: 100%;
-  }
+   .select-form {
+      width: 100%;
+   }
 
 
-  /* HEADER MENU */
+   /* HEADER MENU */
 
-.top-menu {
-   display: none;
+   .top-menu {
+      display: none;
+   }
+
+
 }
 
-
-}
-
-@media (max-width: 370px) {
- 
-}
+@media (max-width: 370px) {}
 
 /* Iphone 5 */
-@media (max-width: 320px) {
-  
-}
+@media (max-width: 320px) {}
