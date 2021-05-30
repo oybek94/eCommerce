@@ -399,6 +399,23 @@ img {
 
 
 
+/* FOOTER */
+
+.footer {
+   padding: 64px 0;
+}
+
+/* FOOTER LINKS */
+
+.footer-links__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer-links__wrapper {
+   width: 100%;
+}
 
 
 
