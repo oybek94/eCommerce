@@ -410,11 +410,43 @@ img {
 .footer-links__container {
    display: flex;
    justify-content: space-between;
-   align-items: center;
 }
 
 .footer-links__wrapper {
+   display: inline-block;
+   position: relative;
+   width: 24%;
+}
+
+.footer-links__title {
+   margin-top: 0;
+   margin-bottom: 16px;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 27px;
+}
+
+.footer-links__list {
+   padding-left: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+   list-style-type: none;
+}
+
+.footer-links__link {
+   display: block;
+   margin-bottom: 16px;
    width: 100%;
+   font-family: var(--secondary-font);
+   font-size: 14px;
+   line-height: 19px;
+   color: var(--secondary-color);
+   text-decoration: none;
+   transition: color .3s ease;
+}
+
+.footer-links__link:hover {
+   color: var(--adittional-color-c4);
 }
 
 
