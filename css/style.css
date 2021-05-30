@@ -105,16 +105,6 @@ img {
    z-index: 50;
 }
 
-.top-header::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   z-index: 2;
-}
-
 .top-header__body {
    position: relative;
    display: flex;
@@ -194,17 +184,24 @@ img {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   
 }
 
 .top-header__content-logo {
-   margin-right: 10px;
    flex-shrink: 0;
    position: relative;
 }
 
 .top-header__content-logo__icon {
    position: relative;
+}
+
+.top-header__content-logo > .top-header__widgets {
+   display: none;
+}
+
+.top-header__item {
+   display: flex;
+   width: 100%;
 }
 
 .top-header__form {
@@ -278,7 +275,7 @@ img {
 }
 
 .personal-cabinet {
-   background-image: url("/img/icons/person-icon.svg");  
+   background-image: url("/img/icons/person-icon.svg");
 }
 
 .basket {
@@ -300,8 +297,16 @@ img {
    font-weight: 600;
    color: #fff;
    background-color: var(--adittional-color-c4);
-   border-radius: 50%;   
+   border-radius: 50%;
 }
+
+
+/* MOBILE SEARCH FORM */
+
+.mobile-search-form {
+   display: none;
+}
+
 
 /* TOP NAVIGATION */
 
@@ -309,6 +314,7 @@ img {
    background-color: #F9F9F9;
    position: relative;
 }
+
 .top-menu__list {
    display: flex;
    align-items: center;
@@ -369,16 +375,12 @@ img {
    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-menu__item {
-}
-
 .dropdown-menu__link {
    display: block;
    padding: 8px 16px;
    text-decoration: none;
    color: var(--primary-color);
    white-space: nowrap;
-   
 }
 
 .dropdown-menu__link:hover {
@@ -420,58 +422,39 @@ img {
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-   .top-header__search,
-   .vertical-line {
-      display: none;
+
+   /* TOP HEADER CONTENT */
+
+   .top-header__content-container {
+      flex-direction: column;
    }
 
    .top-header__content {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: var(--adittional-color-c3);
+      padding: 20px 0;
    }
 
-   .navbar-top {
-      z-index: 4;
-      order: 3;
+   .top-header__content-logo {
+      margin-bottom: 10px;
    }
 
-   .navbar-top__contact {
-      display: flex;
-      flex-direction: column;
+   .top-header__widgets {
+      display: none;
    }
 
-   .navbar-top__container {
-      border-bottom: none;
-      border-top: 1px solid rgba(21, 21, 21, 0.05);
-   }
-  
-
-   /* TOP MENU */
-
-   .top-menu {
-      z-index: 4;
-      padding-top: 70px;
-      background-color: transparent;
+   .top-header__form {
+      width: calc(150px + 357 * (100vw / 767));
    }
 
-   .top-menu__list {
-      flex-direction: column;
-      align-items: flex-start;
-      padding-left: 20px;
+   .select-form,
+   .vertical-line {
+      margin-right: 10px;
    }
+}
 
-   .top-menu__item {
-      width: 96%;
-   }
 
-   .navbar-top__item:not(:last-child) {
-      margin-right: 14px;
-  }
-
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+   
    /* BURGER MENU */
 
    .top-header__burger {
@@ -479,6 +462,7 @@ img {
       position: relative;
       width: 30px;
       height: 20px;
+      z-index: 4;
    }
 
    .top-header__burger-line {
@@ -488,6 +472,7 @@ img {
       height: 2px;
       right: 0;
       top: 9px;
+      transition: all .3s ease;
    }
 
    .top-header__burger::before,
@@ -498,6 +483,7 @@ img {
       width: 100%;
       height: 2px;
       right: 0;
+      transition: all .3s ease;
    }
 
    .top-header__burger::before {
@@ -507,41 +493,94 @@ img {
    .top-header__burger::after {
       bottom: 0;
    }
-}
 
-@media (max-width: 550px) {
-   .top-header__form {
+   .top-header__burger.active .top-header__burger-line {
+      transform: scale(0);
+   }
+
+   .top-header__burger.active::before {
+      transform: rotate(45deg);
+      top: 9px;
+   }
+
+   .top-header__burger.active::after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+   }
+
+
+   /* TOP NAVBAR */
+
+   .navbar-top__list {
       display: none;
    }
+
+   .email {
+      margin-right: 0;
+   }
+
+   .navbar-top__contact-text, 
+   .tel-number {
+      margin-right: 8px;
+   }
+
+   /* TOP HEADER CONTENT */
+
+   .top-header__content-logo {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;  
+   }
+
+   .top-header__content-logo__icon {
+      height: 100%;
+   }
+
+   .top-header__content-logo > .top-header__widgets {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   } 
 
    .search {
       display: block;
    }
+   
+   .widget:not(:last-child) {
+      margin-right: 10px;
+  }
+
+  /* TOP HEADER FORM */
+
+  .top-header__form {
+     width: 100%;
+  }
+
+  .vertical-line,
+  .top-header__search,
+  .top-header__search-btn {
+     display: none;
+  }  
+
+  .select-form {
+     width: 100%;
+  }
 
 
+  /* HEADER MENU */
+
+.top-menu {
+   display: none;
 }
 
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
 
-   .widget:not(:last-child) {
-      margin-right: 20px;
-   }
 }
 
 @media (max-width: 370px) {
-   .navbar-top__list {
-      flex-direction: column;
-   }
-
-   .top-header__widgets {
-      display: none;
-   }
+ 
 }
 
 /* Iphone 5 */
 @media (max-width: 320px) {
-   .widget:not(:last-child) {
-      margin-right: 10px;
-   }
+  
 }
