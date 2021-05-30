@@ -410,12 +410,16 @@ img {
 .footer-links__container {
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 .footer-links__wrapper {
    display: inline-block;
    position: relative;
-   width: 24%;
+   width: 25%;
+   padding: 0;
+   margin: 0;
+   margin-bottom: 20px;
 }
 
 .footer-links__title {
@@ -494,6 +498,15 @@ img {
    .select-form,
    .vertical-line {
       margin-right: 10px;
+   }
+
+   /* FOOTER */
+
+
+   /* FOOTER LINKS */
+
+   .footer-links__wrapper {
+      width: 50%;
    }
 }
 
