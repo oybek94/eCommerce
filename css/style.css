@@ -782,6 +782,25 @@ img {
    .top-header__search {
       width: calc(150px + 80 * (100vw / 1200));
    }
+
+   /* GRID CARD */
+
+   .grid-card__footer {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .grid-card__price {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 8px;
+   }
+
+   .grid-card__button {
+      width: 100%;
+   }
 }
 
 /* Landscape phones and portrait tablets */
@@ -831,6 +850,10 @@ img {
       width: 40%;
    }
 
+   .section-menu__list {
+      margin-bottom: calc(0px + 48 * (100vw / 1200));
+   }
+
    /*HEADING RECEPIES CARD*/
 
    .heading-recepies {
@@ -849,7 +872,75 @@ img {
       align-items: center;
       justify-content: center;
    }
+
+
+
+   /* BEST PRODUCTS */
+
+   .best-products__container {
+      flex-direction: column;
+   }
+
+   .best-products__section-menu {
+      align-items: center;
+      width: 100%;
+      text-align: center;
+   }
+
+   .grid-cards {
+      order: 0;
+      margin-bottom: 16px;
+   }
+
+   .grid-card__footer {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .grid-card__price {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 8px;
+   }
+
+   .grid-card__button {
+      width: 100%;
+   }
 }
+
+
+
+@media (max-width: 650px) {
+   .best-products__container {
+      flex-direction: row;
+   }
+
+   .grid-cards {
+      flex-direction: column;
+      order: 1;
+   }
+
+   .grid-card {
+      width: auto;
+   }
+
+   .grid-card:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 16px;
+  }
+
+  .best-products__section-menu {
+      align-items: flex-start;  
+      width: auto;
+      text-align: left;
+  }
+  
+  
+}
+
+
 
 
 /* Portrait phones and smaller */
@@ -1030,9 +1121,11 @@ img {
    .section-menu {
       width: 80%;
       text-align: center;
+      margin-right: 0;
    }
 
-   .category-menu__container {
+   .category-menu__container,
+   .best-products__container {
       flex-direction: column;
    }
 
@@ -1044,7 +1137,8 @@ img {
       font-size: 14px;
    }
 
-   .heading-recepies {
+   .heading-recepies,
+   .grid-cards {
       order: 0;
    }
 
@@ -1067,6 +1161,11 @@ img {
       height: 8px;
       top: 14px;
       right: 8px;
+   }
+
+   .best-products__section-menu {
+      align-items: center;
+      width: auto;
    }
 
 }
