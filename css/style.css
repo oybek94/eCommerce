@@ -14,6 +14,7 @@
 /* GLOBAL CLASSES */
 html {
    box-sizing: border-box;
+   scroll-behavior: smooth;
 }
 
 *,
@@ -329,7 +330,6 @@ img {
 
 .top-menu__item {
    position: relative;
-   z-index: 1;
 }
 
 .top-menu__link {
@@ -832,10 +832,6 @@ img {
       width: 100%;
    }
 
-   .top-header__content-logo__icon {
-      height: 100%;
-   }
-
    .top-header__content-logo>.top-header__widgets {
       position: relative;
       display: flex;
@@ -879,6 +875,10 @@ img {
       width: 100%;
    }
 
+   .top-menu__item:not(:last-child) {
+      margin: 0;
+   }
+
    .top-menu__list {
       padding: 0 15px;
    }
@@ -888,7 +888,7 @@ img {
    .dropdown-menu {
       display: none;
       position: relative;
-      z-index: 5;
+      z-index: 50s;
       padding: 8px 0;
       left: 50%;
       top: 100%;
@@ -927,6 +927,7 @@ img {
 
    .section-menu {
       width: 80%;
+      text-align: center;
    }
 
    .section-menu__list {
