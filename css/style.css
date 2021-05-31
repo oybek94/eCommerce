@@ -654,6 +654,12 @@ img {
 
 
 
+/* Best selling products */
+
+
+
+
+
 
 
 
@@ -930,12 +936,16 @@ img {
       text-align: center;
    }
 
+   .category-menu__container {
+      flex-direction: column;
+   }
+
    .section-menu__list {
       margin-bottom: 16px;
    }
 
-   .category-menu__container {
-      flex-direction: column;
+   .section-menu__link {
+      font-size: 14px;
    }
 
    .heading-recepies {
