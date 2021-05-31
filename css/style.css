@@ -667,6 +667,8 @@ img {
 }
 
 .grid-card {
+   display: flex;
+   flex-direction: column;
    padding: 16px;
    width: 33.33%;
    min-height: 330px;
@@ -688,6 +690,7 @@ img {
 }
 
 .grid-card__info {
+   flex-grow: 1;
    margin-bottom: 16px;
 }
 
