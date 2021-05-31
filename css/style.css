@@ -35,42 +35,6 @@ body {
    color: var(--primary-color);
 }
 
-h1 {
-   font-weight: 600;
-   font-size: 32px;
-   line-height: 140%;
-}
-
-h2 {
-   font-weight: 600;
-   font-size: 26px;
-   line-height: 39px;
-}
-
-h3 {
-   font-weight: 600;
-   font-size: 22px;
-   line-height: 33px;
-}
-
-h4 {
-   font-weight: 600;
-   font-size: 18px;
-   line-height: 27px;
-}
-
-h5 {
-   font-weight: 500;
-   font-size: 15px;
-   line-height: 22px;
-}
-
-h6 {
-   font-weight: 600;
-   font-size: 12px;
-   line-height: 18px;
-}
-
 .visually-hidden {
    position: absolute;
    width: 1px;
@@ -752,6 +716,43 @@ img {
 .grid-card__button:hover {
    background-color: transparent;
    color: var(--secondary-color);
+}
+
+
+
+
+/* COMMENTS */
+
+
+.testimonial__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.testimonial__button {
+   position: relative;
+   padding-right: 24px;
+   text-decoration: none;
+   color: var(--primary-color);
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 22px;
+   transition: color .3s ease;
+}
+
+.testimonial__button:hover {
+   color: var(--secondary-color);
+}
+
+.testimonial__button::after {
+   content: '';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   top: 4px;
+   right: 0px;
+   background: url("/img/icons/arrow-black-right.svg") no-repeat center center;
 }
 
 
