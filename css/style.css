@@ -943,10 +943,23 @@ img {
    .heading-recepies__card:not(:last-child) {
       margin-bottom: 16px;
    }
+
    .heading-recepies__card {
       margin-bottom: 16px;
+      padding: 24px 16px 16px;
    }
 
+   .heading-recepies__card-button__link {
+      padding: 6px 19px 6px 8px;
+      font-size: 12px;
+   }
+
+   .heading-recepies__card-button__link::after {
+      width: 8px;
+      height: 8px;
+      top: 14px;
+      right: 8px;
+   }
 
 }
 
