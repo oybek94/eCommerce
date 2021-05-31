@@ -656,7 +656,100 @@ img {
 
 /* Best selling products */
 
+.best-products__container {
+   display: flex;
+}
 
+.grid-cards {
+   display: flex;
+   order: 2;
+   width: 100%;
+}
+
+.grid-card {
+   padding: 16px;
+   width: 33.33%;
+   min-height: 330px;
+   border: 1px solid #D1D1D1;
+   border-radius: 12px;
+}
+
+.grid-card:not(:last-child) {
+   margin-right: 32px;
+}
+
+.grid-card__header {
+   margin-bottom: 16px;
+}
+
+.grid-card__image {
+   width: 100%;
+   border-radius: 12px;
+}
+
+.grid-card__info {
+   margin-bottom: 16px;
+}
+
+.grid-card__title {
+   margin-top: 0;
+   margin-bottom: 4px;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 22px;
+}
+
+.grid-card__desc {
+   margin-top: 0;
+   margin-bottom: 0;
+   font-family: var(--secondary-font);
+   font-size: 12px;
+   line-height: 16px;
+   color: #575757;
+}
+
+.grid-card__footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.grid-card__price {
+   display: flex;
+   flex-direction: column;
+}
+
+.grid-card__price-number {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 27px;
+}
+
+.grid-card__discount {
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+   text-decoration-line: line-through;
+   color: #A9A9A9;
+}
+
+.grid-card__button {
+   padding: 6px 12px;
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 22px;   
+   color: #fff;
+   background: #6A983C;
+   border: 2px solid #46760A;
+   box-sizing: border-box;
+   border-radius: 12px;
+   transition: background-color .3s ease;
+}
+
+.grid-card__button:hover {
+   background-color: transparent;
+   color: var(--secondary-color);
+}
 
 
 
