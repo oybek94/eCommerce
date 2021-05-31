@@ -602,7 +602,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-   width: 50%; 
+  width: 50%; 
+  min-height: 200px;
   padding: 48px 32px 32px;
   border-radius: 12px;
   background: url("/img/photos/card-bg.png") no-repeat center center;
