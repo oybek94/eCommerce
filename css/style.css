@@ -473,8 +473,8 @@ img {
 
 .section-menu {
    display: flex;
-   flex-direction: column; 
-   width: 25%;  
+   flex-direction: column;
+   width: 25%;
    margin-right: 32px;
 }
 
@@ -563,16 +563,16 @@ img {
 }
 
 .heading-recepies__card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 50%; 
-  min-height: 200px;
-  padding: 48px 32px 32px;
-  border-radius: 12px;
-  background: url("/img/photos/card-bg.png") no-repeat center center;
-  background-size: cover;
-  background-color: rgba(106, 152, 60, 0.1);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 50%;
+   min-height: 200px;
+   padding: 48px 32px 32px;
+   border-radius: 12px;
+   background: url("/img/photos/card-bg.png") no-repeat center center;
+   background-size: cover;
+   background-color: rgba(106, 152, 60, 0.1);
 }
 
 .heading-recepies__card-subtitle {
@@ -704,7 +704,7 @@ img {
    padding: 6px 12px;
    font-weight: bold;
    font-size: 15px;
-   line-height: 22px;   
+   line-height: 22px;
    color: #fff;
    background: #6A983C;
    border: 2px solid #46760A;
@@ -723,6 +723,9 @@ img {
 
 /* COMMENTS */
 
+.testimonial {
+   overflow-x: auto;
+}
 
 .testimonial__container {
    display: flex;
@@ -754,6 +757,54 @@ img {
    right: 0px;
    background: url("/img/icons/arrow-black-right.svg") no-repeat center center;
 }
+
+/* TESTIMONIAL CARD */
+
+.testimonial-card__list {
+   display: inline-table;
+   padding-left: 0;
+   list-style: none;
+}
+
+.testimonial-card__item {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   max-width: 370px;
+   margin-right: 32px;
+   margin-bottom: 40px;
+   padding: 24px 32px 40px;
+   border: 1px solid #F1F1F1;
+   border-radius: 12px;
+}
+
+.testimonial-card__text {
+   margin-top: 0;
+   margin-bottom: 24px;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 22px;
+   text-align: center;
+}
+
+.testimonial-card__author {
+   display: block;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+   color: #A9A9A9;
+}
+
+.testimonial-card__author-photo {
+   position: absolute;
+   bottom: -25px;
+   border-radius: 50%;
+   width: 48px;
+   height: 48px;
+}
+
+
 
 
 
@@ -930,15 +981,15 @@ img {
    .grid-card:not(:last-child) {
       margin-right: 0;
       margin-bottom: 16px;
-  }
+   }
 
-  .best-products__section-menu {
-      align-items: flex-start;  
+   .best-products__section-menu {
+      align-items: flex-start;
       width: auto;
       text-align: left;
-  }
-  
-  
+   }
+
+
 }
 
 
