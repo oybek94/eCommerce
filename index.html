@@ -232,8 +232,8 @@
       <section class="best-products section-wrapper">
          <h2 class="visually-hidden">Best selling products</h2>
          <div class="best-products__container container">
-            <div class="grid-cards">
-               <div class="grid-card">
+            <ul class="grid-cards">
+               <li class="grid-card">
                   <header class="grid-card__header">
                      <img class="grid-card__image" src="/img/photos/grid-card-image.png" alt="product photo" width="237"
                         height="180">
@@ -251,9 +251,9 @@
                      </div>
                      <button class="grid-card__button" type="button">Buy now</button>
                   </footer>
-               </div>
+               </li>
 
-               <div class="grid-card">
+               <li class="grid-card">
                   <header class="grid-card__header">
                      <img class="grid-card__image" src="/img/photos/grid-card-image.png" alt="product photo" width="237"
                         height="180">
@@ -269,9 +269,9 @@
                      </div>
                      <button class="grid-card__button" type="button">Buy now</button>
                   </footer>
-               </div>
+               </li>
 
-               <div class="grid-card">
+               <li class="grid-card">
                   <header class="grid-card__header">
                      <img class="grid-card__image" src="/img/photos/grid-card-image.png" alt="product photo" width="237"
                         height="180">
@@ -287,8 +287,8 @@
                      </div>
                      <button class="grid-card__button" type="button">Buy now</button>
                   </footer>
-               </div>
-            </div>
+               </li>
+            </ul>
 
             <div class="best-products__section-menu section-menu">
                <h3 class="section-menu__title">Best selling products</h3>
@@ -319,8 +319,8 @@
       <section class="best-products section-wrapper">
          <h2 class="visually-hidden">Best from Farmers</h2>
          <div class="best-products__container container">
-            <div class="grid-cards">
-               <div class="grid-card">
+            <ul class="grid-cards">
+               <li class="grid-card">
                   <header class="grid-card__header">
                      <img class="grid-card__image" src="/img/photos/grid-card-image.png" alt="product photo" width="237"
                         height="180">
@@ -338,9 +338,9 @@
                      </div>
                      <button class="grid-card__button" type="button">Buy now</button>
                   </footer>
-               </div>
+               </li>
 
-               <div class="grid-card">
+               <li class="grid-card">
                   <header class="grid-card__header">
                      <img class="grid-card__image" src="/img/photos/grid-card-image.png" alt="product photo" width="237"
                         height="180">
@@ -356,9 +356,9 @@
                      </div>
                      <button class="grid-card__button" type="button">Buy now</button>
                   </footer>
-               </div>
+               </li>
 
-               <div class="grid-card">
+               <li class="grid-card">
                   <header class="grid-card__header">
                      <img class="grid-card__image" src="/img/photos/grid-card-image.png" alt="product photo" width="237"
                         height="180">
@@ -374,8 +374,8 @@
                      </div>
                      <button class="grid-card__button" type="button">Buy now</button>
                   </footer>
-               </div>
-            </div>
+               </li>
+            </ul>
 
             <div class="best-products__section-menu section-menu">
                <h3 class="section-menu__title">Best from Farmers</h3>
@@ -406,7 +406,7 @@
       <section class="testimonial section-wrapper">
          <div class="testimonial__container container">
             <h2 class="section-menu__title">Our customers says</h2>
-            <a class="testimonial__button" href="#">Button</a>
+            <a class="section__button" href="#">Button</a>
          </div>
 
          <div class="testimonial-card">
@@ -458,9 +458,98 @@
 
       </section>
 
-      <section class="products">
+      <section class="products section-wrapper">
          <div class="products__container container">
+            <header class="products__header">
+               <h2 class="section-menu__title">Our customers says</h2>
+               <a class="section__button" href="#">Button</a>
+            </header>
 
+            <div class="products__grid-cards__wrapper">
+               <ul class="products__grid-cards grid-cards">
+                  <li class="products__grid-card grid-card">
+                     <header class="grid-card__header">
+                        <img class="grid-card__image" src="/img/photos/grid-card-image.png" alt="product photo"
+                           width="237" height="180">
+                     </header>
+
+                     <div class="grid-card__info">
+                        <h3 class="grid-card__title">Product Title</h3>
+                        <p class="grid-card__desc">Space for a small product description </p>
+                     </div>
+
+                     <footer class="grid-card__footer">
+                        <div class="grid-card__price">
+                           <span class="grid-card__price-number">1.48 USD</span>
+                           <span class="grid-card__discount"></span>
+                        </div>
+                        <button class="grid-card__button" type="button">Buy now</button>
+                     </footer>
+                  </li>
+
+                  <li class="products__grid-card grid-card">
+                     <header class="grid-card__header">
+                        <img class="grid-card__image" src="/img/photos/grid-card-image.png" alt="product photo"
+                           width="237" height="180">
+                     </header>
+
+                     <div class="grid-card__info">
+                        <h3 class="grid-card__title">Product Title</h3>
+                        <p class="grid-card__desc">Space for a small product description </p>
+                     </div>
+
+                     <footer class="grid-card__footer">
+                        <div class="grid-card__price">
+                           <span class="grid-card__price-number">1.48 USD</span>
+                           <span class="grid-card__discount"></span>
+                        </div>
+                        <button class="grid-card__button" type="button">Buy now</button>
+                     </footer>
+                  </li>
+               </ul>
+
+               <ul class="products__grid-cards grid-cards">
+                  <li class="products__grid-card grid-card">
+                     <header class="grid-card__header">
+                        <img class="grid-card__image" src="/img/photos/grid-card-image.png" alt="product photo"
+                           width="237" height="180">
+                     </header>
+
+                     <div class="grid-card__info">
+                        <h3 class="grid-card__title">Product Title</h3>
+                        <p class="grid-card__desc">Space for a small product description </p>
+                     </div>
+
+                     <footer class="grid-card__footer">
+                        <div class="grid-card__price">
+                           <span class="grid-card__price-number">1.48 USD</span>
+                           <span class="grid-card__discount"></span>
+                        </div>
+                        <button class="grid-card__button" type="button">Buy now</button>
+                     </footer>
+                  </li>
+
+                  <li class="products__grid-card grid-card">
+                     <header class="grid-card__header">
+                        <img class="grid-card__image" src="/img/photos/grid-card-image.png" alt="product photo"
+                           width="237" height="180">
+                     </header>
+
+                     <div class="grid-card__info">
+                        <h3 class="grid-card__title">Product Title</h3>
+                        <p class="grid-card__desc">Space for a small product description </p>
+                     </div>
+
+                     <footer class="grid-card__footer">
+                        <div class="grid-card__price">
+                           <span class="grid-card__price-number">1.48 USD</span>
+                           <span class="grid-card__discount"></span>
+                        </div>
+                        <button class="grid-card__button" type="button">Buy now</button>
+                     </footer>
+                  </li>
+               </ul>
+            </div>
          </div>
       </section>
    </main>
