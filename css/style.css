@@ -480,7 +480,7 @@ img {
 
 .section-menu__title {
    margin-top: 0;
-   margin-bottom: 16px;
+   margin-bottom: 0;
    font-weight: 600;
    font-size: 18px;
    line-height: 27px;
@@ -732,6 +732,7 @@ img {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   margin-bottom: 16px;
 }
 
 .testimonial__button {
@@ -762,9 +763,10 @@ img {
 /* TESTIMONIAL CARD */
 
 .testimonial-card__list {
-   display: inline-table;
+
    padding-left: 0;
    list-style: none;
+   min-height: 235px;
 }
 
 .testimonial-card__item {
@@ -922,7 +924,6 @@ img {
    }
 
    .category-menu__container {
-      align-items: center;
       justify-content: center;
    }
 
@@ -1172,7 +1173,7 @@ img {
    }
 
    .section-menu {
-      width: 80%;
+      width: 100%;
       text-align: center;
       margin-right: 0;
    }
@@ -1223,10 +1224,20 @@ img {
 
 }
 
-@media (max-width: 340px) {
+@media (max-width: 350px) {
    .widget:not(:last-child) {
       margin-right: 5px;
    }
+
+   .section-menu__title {
+      font-size: 14px;
+   }
+
+   .testimonial-card__text {
+      font-size: 12px;
+   }
+
+
 }
 
 /* Iphone 5 */
