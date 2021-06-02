@@ -725,6 +725,7 @@ img {
 
 .testimonial {
    overflow-x: auto;
+   border: 1px solid #F9F9F9;
 }
 
 .testimonial__container {
