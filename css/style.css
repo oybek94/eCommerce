@@ -838,27 +838,71 @@ img {
 }
 
 .blog-posts__cover {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
    width: 470px;
    height: 400px;
+   padding: 24px;
+   margin-right: 32px;
+   background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 50%);
+   border-radius: 12px;
 }
 
 .blog-posts__cover__photo {
-   position: relative;
-   width: 100%;
-   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
 }
 
 .tips {
-   position: absolute;
+   display: block;
+   width: fit-content;
+   padding: 0 8px;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+   color: #6A983C;
+   background-color: #F4F8EC;
+   border-radius: 12px;
 }
 
-.blog-posts__cover__title {}
+.blog-posts__cover__title {
+   margin: 0;
+   margin-bottom: 8px;
+   color: #fff;
+   white-space: pre-line;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 33px;
+}
 
-.blog-posts__cover__footer {}
+.blog-posts__cover__footer {
+   display: flex;
+   align-items: center;
+   color: #fff;
+}
 
-.blog-posts__cover__author-photo {}
+.blog-posts__cover__author-photo {
+   width: 32px;
+   height: 32px;
+   margin-right: 8px;
+}
 
-.blog-posts__cover__author-name {}
+.blog-posts__author-name,
+.blog-posts__time {
+   font-family: var(--secondary-font);
+   font-size: 12px;
+   line-height: 16px;
+}
+
+.blog-posts__author-name {
+   margin-right: 16px;
+}
+
+
 
 
 
