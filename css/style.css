@@ -1157,6 +1157,8 @@ img {
 }
 
 .main__form {
+   display: flex;
+   align-items: center;
    padding: 9px 16px;
    background: #F9F9F9;
    border: 1px solid #D1D1D1;
@@ -1164,12 +1166,21 @@ img {
    border-radius: 12px;
 }
 
+.main__form:not(:last-child) {
+   margin-right: 16px;
+}
+
+
+/* RADIO BUTTON */
+
 .main__form__radio-label {
    display: inline-block;
    position: relative;
    padding-left: 30px;
    cursor: pointer;
+   font-family: var(--secondary-font);
    font-size: 14px;
+   line-height: 19px;
    -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
@@ -1225,8 +1236,94 @@ img {
  }
 
 
+ /* CHECKBOX BUTTON */
 
+ .main__form__checkbox-label {
+   display: block;
+   position: relative;
+   padding-left: 30px;
+   cursor: pointer;
+   font-family: var(--secondary-font);
+   font-size: 14px;
+   line-height: 19px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   top: -2px;
+ }
+ 
+ .main__form__checkbox-input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+ }
 
+ .checkbox__checkmark {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 20px;
+   width: 20px;
+   background-color: transparent;
+   border: 1px solid  #D1D1D1;
+ }
+
+ .main__form__checkbox-input:checked ~ .checkbox__checkmark {
+   background-color: var(--secondary-color);
+   border: 1px solid  #46760A;
+ }
+ 
+ .checkbox__checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+ }
+ 
+ .main__form__checkbox-input:checked ~ .checkbox__checkmark:after {
+   display: block;
+ }
+ 
+ .checkbox__checkmark:after {
+   left: 6px;
+   top: 0;
+   width: 7px;
+   height: 14px;
+   border: solid white;
+   border-width: 0 3px 3px 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+ }
+
+ .main__form-tips {
+   padding: 0 8px;
+   margin-left: 8px;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+   border-radius: 12px;
+   border: 1px solid #D1D1D1;
+ }
+
+ .main__form-border {
+   position: relative;
+   margin: 0 24px;
+   width: 1px;
+   height: 20px;
+   background-color: #D1D1D1;
+ }
+
+ .main__select-form {
+   border: none;
+   background-color: transparent;
+}
+
+ .main__select-form__option {
+    border: none;
+}
 
 
 
