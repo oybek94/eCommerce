@@ -1163,12 +1163,67 @@ img {
    box-sizing: border-box;
    border-radius: 12px;
 }
+
 .main__form__radio-label {
+   display: inline-block;
+   position: relative;
+   padding-left: 30px;
+   cursor: pointer;
+   font-size: 14px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 }
-.main__form__radio-input {
-}
-.checkmark {
-}
+
+.main__form__radio-label:not(:last-child) {
+   margin-right: 16px;
+ }
+ 
+ .main__form__radio-input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+ }
+ 
+ .checkmark {
+   position: absolute;
+   top: 0px;
+   left: 0;
+   height: 20px;
+   width: 20px;
+   background-color: transparent;
+   border-radius: 50%;
+ }
+ 
+ .main__form__radio-input ~ .checkmark {
+   background-color: transparent;
+   border: 1px solid #D1D1D1;
+ }
+ 
+ .main__form__radio-input:checked ~ .checkmark {
+   background-color: var(--primary-color);
+ }
+ 
+ .checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+ }
+ 
+ .main__form__radio-input:checked ~ .checkmark:after {
+   display: block;
+ }
+ 
+ .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+ }
+
 
 
 
