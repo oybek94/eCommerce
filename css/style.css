@@ -544,6 +544,11 @@ img {
    color: #fff;
 }
 
+.section-menu__button-link:hover::after {
+   background-image: url("/img/icons/arrow-white-right.svg");
+
+}
+
 .section-menu__button-link:active {
    opacity: 0.8;
 }
@@ -614,6 +619,10 @@ img {
 .heading-recepies__card-button__link:hover {
    background-color: var(--secondary-color);
    color: #fff;
+}
+
+.heading-recepies__card-button__link:hover::after {
+   background-image: url("/img/icons/arrow-white-right.svg");
 }
 
 
