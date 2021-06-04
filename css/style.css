@@ -852,9 +852,11 @@ img {
 
 .blog-posts__cover__photo {
    position: absolute;
+   height: 100%;
    top: 0;
    left: 0;
    z-index: -1;
+   border-radius: 12px;
 }
 
 .tips {
@@ -928,6 +930,11 @@ img {
 
 .blog-posts__author-name {
    margin-right: 16px;
+}
+
+
+.blog-posts__inner-wrapper {
+   display: flex;
 }
 
 /* VERTICAL BLOG POST */
@@ -1035,6 +1042,7 @@ img {
    .products__grid-cards {
       justify-content: center;
    }
+   
 
    /* GRID CARD */
 
@@ -1054,7 +1062,31 @@ img {
    .grid-card__button {
       width: 100%;
    }
+
+
+   /* BLOG POSTS */
+
+   .blog-posts__wrapper {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .blog-posts__cover {
+      margin-bottom: 32px;
+      margin-right: 0;
+      width: 100%;
+   }
+
+   .blog-posts__cover__photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
 }
+
+
+
+
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
@@ -1172,6 +1204,27 @@ img {
 
    .products__grid-cards {
       justify-content: center;
+   }
+
+
+
+   /* BLOG POSTS */
+
+   .blog-posts__wrapper {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .blog-posts__cover {
+      margin-bottom: 32px;
+      margin-right: 0;
+      width: 100%;
+   }
+
+   .blog-posts__cover__photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
    }
 
 }
@@ -1436,6 +1489,32 @@ img {
    .best-products__section-menu {
       align-items: center;
       width: auto;
+   }
+
+
+   /* BLOG POSTS */
+
+   .blog-posts__inner-wrapper {
+      flex-direction: column;
+      width: 100%;
+   }
+
+   .vertical-card {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 44px;
+   }
+
+   .vertical-card__photo {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 12px;
+      object-fit: cover;
+   }
+
+   .horizontal-card {
+      justify-content: space-between;
+      align-items: flex-start;
    }
 
 }
