@@ -179,16 +179,39 @@
       <header class="main__header">
          <div class="container">
             <ul class="breadcrumb">
-               <li class="breadcrumb-item">
-                  <a href="" class="breadcrumb-link"></a>
-               </li>
-
-               <li class="breadcrumb-item">
-                  <a href="" class="breadcrumb-link"></a>
-               </li>
+               <li class="breadcrumb-item"><a href="" class="breadcrumb-link">Homepage</a></li>
+               <li class="breadcrumb-item">Fruit and vegetables</li>
             </ul>
+
+            <div class="main__header-view-form">
+               <h2 class="main__header-title">Fruit and vegetables</h2>
+               <div class="view-form">
+                  <button class="gird view-btn">Grid view</button>
+                  <button class="list view-btn">List view</button>
+                  <span class="products-quantity"><span class="products-quantity__tips">117</span>Products</span>
+               </div>
+            </div>
          </div>
       </header>
+
+      <div class="main__filters">
+         <div class="main__filters__container container">
+            <div class="filters">
+               <form class="main__form">
+                  <input class="main__form__radio-input" type="radio" name="radio">
+                  <label class="main__form__radio-label">One</label>
+                  <span class="checkmark"></span>
+
+                  <input class="main__form__radio-input" type="radio" checked="checked" name="radio">
+                  <label class="main__form__radio-label">Two</label>
+                  <span class="checkmark"></span>
+
+               </form>
+
+            </div>
+            <div class="filters-tags"></div>
+         </div>
+      </div>
    </main>
 
    <footer class="footer">
