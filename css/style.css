@@ -366,6 +366,7 @@ img {
 /* FOOTER */
 
 .footer {
+   flex-grow: 1;
    padding: 64px 0;
 }
 
@@ -635,6 +636,7 @@ img {
 
 .grid-cards {
    display: flex;
+   justify-content: space-between;
    order: 2;
    width: 100%;
    padding-left: 0;
@@ -1128,7 +1130,6 @@ img {
    }
 
    /* FOOTER */
-
 
    /* FOOTER LINKS */
 
