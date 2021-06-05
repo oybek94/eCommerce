@@ -191,64 +191,93 @@
                   <span class="products-quantity"><span class="products-quantity__tips">117</span>Products</span>
                </div>
             </div>
+            <div class="main__filters">
+               <div class="main__filters__container">
+                  <div class="filters">
+                     <form class="main__form">
+                        <label class="main__form__radio-label" for="radio1">Filtre text
+                           <input class="main__form__radio-input" id="radio1" type="radio" name="radio">
+                           <span class="checkmark"></span>
+                        </label>
+
+                        <label class="main__form__radio-label" for="radio2">Filtre text
+                           <input class="main__form__radio-input" id="radio2" type="radio" checked="checked"
+                              name="radio">
+                           <span class="checkmark"></span>
+                        </label>
+                     </form>
+
+                     <form class="main__form">
+                        <label class="main__form__checkbox-label">Filtre
+                           <input class="main__form__checkbox-input" type="checkbox">
+                           <span class="checkbox__checkmark"></span>
+                        </label>
+                        <span class="main__form-tips">Nbm</span>
+                     </form>
+
+                     <form class="main__form">
+                        <label class="main__form__checkbox-label">Filtre
+                           <input class="main__form__checkbox-input" type="checkbox">
+                           <span class="checkbox__checkmark"></span>
+                        </label>
+                        <span class="main__form-tips">Nbm</span>
+                     </form>
+
+                     <form class="main__form">
+                        <label class="main__form__checkbox-label">Filtre
+                           <input class="main__form__checkbox-input" type="checkbox" checked>
+                           <span class="checkbox__checkmark"></span>
+                        </label>
+                        <span class="main__form-tips">12</span>
+                        <span class="main__form-border"></span>
+                        <select class="main__select-form">
+                           <option class="main__select-form__option" value="Select">Select</option>
+                           <option class="main__select-form__option" value="Select2">Select1</option>
+                           <option class="main__select-form__option" value="Select3">Select2</option>
+                           <option class="main__select-form__option" value="Select4">Select3</option>
+                           <option class="main__select-form__option" value="Select5">Select4</option>
+                        </select>
+                     </form>
+                  </div>
+
+                  <div class="filters-tags">
+                     <span class="filters-tags__title">Applied filtres:</span>
+                     <span class="tag">Selected Filtre</span>
+                     <span class="tag">Selected Filtre</span>
+                  </div>
+               </div>
+            </div>
          </div>
       </header>
 
-      <div class="main__filters">
-         <div class="main__filters__container container">
-            <div class="filters">
-               <form class="main__form">
-                  <label class="main__form__radio-label" for="radio1">Filtre text
-                     <input class="main__form__radio-input" id="radio1" type="radio" name="radio">
-                     <span class="checkmark"></span>
-                  </label>
-
-                  <label class="main__form__radio-label" for="radio2">Filtre text
-                     <input class="main__form__radio-input" id="radio2" type="radio" checked="checked" name="radio">
-                     <span class="checkmark"></span>
-                  </label>
-               </form>
-
-               <form class="main__form">
-                  <label class="main__form__checkbox-label">Filtre
-                     <input class="main__form__checkbox-input" type="checkbox">
-                     <span class="checkbox__checkmark"></span>
-                  </label>
-                  <span class="main__form-tips">Nbm</span>
-               </form>
-
-               <form class="main__form">
-                  <label class="main__form__checkbox-label">Filtre
-                     <input class="main__form__checkbox-input" type="checkbox">
-                     <span class="checkbox__checkmark"></span>
-                  </label>
-                  <span class="main__form-tips">Nbm</span>
-               </form>
-
-               <form class="main__form">
-                  <label class="main__form__checkbox-label">Filtre
-                     <input class="main__form__checkbox-input" type="checkbox" checked>
-                     <span class="checkbox__checkmark"></span>
-                  </label>
-                  <span class="main__form-tips">12</span>
-                  <span class="main__form-border"></span>
-                  <select class="main__select-form">
-                     <option class="main__select-form__option" value="Select">Select</option>
-                     <option class="main__select-form__option" value="Select2">Select1</option>
-                     <option class="main__select-form__option" value="Select3">Select2</option>
-                     <option class="main__select-form__option" value="Select4">Select3</option>
-                     <option class="main__select-form__option" value="Select5">Select4</option>
-                  </select>
-               </form>
-            </div>
-
-            <div class="filters-tags">
-               <span class="filters-tags__title">Applied filtres:</span>
-               <span class="tag">Selected Filtre</span>
-               <span class="tag">Selected Filtre</span>
+      <section class="products-list section-wrapper">
+         <h2 class="visually-hidden">Products list Aside</h2>
+         <div class="products-list__container container">
+            <div class="products-list__aside">
+               <div class="products-list__aside-categories aside-content-wrapper">
+                  <h3 class="products-list__aside-categories__title">Categories</h3>
+                  <ul class="products-list__aside-categories__list">
+                     <li class="products-list__aside-categories__item">
+                        <a class="products-list__aside-categories__link" href="#">Category name</a>
+                        <span class="tips">320</span>
+                     </li>
+                     <li class="products-list__aside-categories__item">
+                        <a class="products-list__aside-categories__link" href="#">Category name</a>
+                        <span class="tips">112</span>
+                     </li>
+                     <li class="products-list__aside-categories__item">
+                        <a class="products-list__aside-categories__link" href="#">Category name</a>
+                        <span class="tips">32</span>
+                     </li>
+                     <li class="products-list__aside-categories__item">
+                        <a class="products-list__aside-categories__link" href="#">Category name</a>
+                        <span class="tips">48</span>
+                     </li>
+                  </ul>
+               </div>
             </div>
          </div>
-      </div>
+      </section>
    </main>
 
    <footer class="footer">
