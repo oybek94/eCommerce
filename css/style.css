@@ -1154,16 +1154,19 @@ img {
 .filters {
    display: flex;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 .main__form {
    display: flex;
    align-items: center;
    padding: 9px 16px;
+   margin-bottom: 8px;
    background: #F9F9F9;
    border: 1px solid #D1D1D1;
    box-sizing: border-box;
    border-radius: 12px;
+   white-space: nowrap;
 }
 
 .main__form:not(:last-child) {
