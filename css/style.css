@@ -1329,6 +1329,49 @@ img {
 }
 
 
+/* TAGS */
+
+.filters-tags {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 8px;
+}
+
+.filters-tags__title {
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+   color: #A9A9A9;
+   margin-right: 12px;
+   margin-bottom: 8px;
+}
+
+.tag {
+   position: relative;
+   padding: 0 24px 0 8px;
+   margin-right: 12px;
+   margin-bottom: 8px;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+   color: #6A983C;
+   background-color: #F4F8EC;
+   border-radius: 12px;
+}
+
+.tag::before {
+   content: '';
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   right: 8px;
+   top: 3px;
+   background: url("/img/icons/X-icon.svg") no-repeat center;
+   cursor: pointer;
+}
+
+
 
 
 
