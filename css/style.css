@@ -1395,7 +1395,7 @@ img {
    margin-bottom: 48px;
 }
 
-.products-list__aside-categories__title {
+.products-list__aside-content__title {
    margin-top: 0;
    margin-bottom: 16px;
    font-weight: 600;
@@ -1434,6 +1434,12 @@ img {
 }
 
 
+
+/* ASIDE CHECKBOX */
+
+.aside-checkbox:not(:last-child) {
+   margin-bottom: 14px;
+}
 
 
 
