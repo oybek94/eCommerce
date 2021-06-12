@@ -1485,6 +1485,7 @@ img {
 .card__photo {
    max-width: 237px;
    object-fit: cover;
+   object-position: center;
 }
 
 .card__tips {
@@ -2038,9 +2039,6 @@ img {
       font-size: 24px;
    }
 
-   .view-form {
-      display: none;
-   }
 }
 
 
@@ -2073,7 +2071,9 @@ img {
    }
 
 
-
+   .view-form {
+      display: none;
+   }
 
 }
 
