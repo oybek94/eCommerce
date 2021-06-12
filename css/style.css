@@ -2037,6 +2037,10 @@ img {
    .main__header-title {
       font-size: 24px;
    }
+
+   .view-form {
+      display: none;
+   }
 }
 
 
