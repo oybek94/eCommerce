@@ -1835,6 +1835,54 @@ img {
 }
 
 
+/* PRODUCT INFO CONTENT */
+
+.product-info__content {
+   display: flex;
+   flex-direction: column;
+}
+
+.product-info__descriptions {
+   margin-bottom: 62px;
+}
+
+.product-info__title {
+   margin-top: 0;
+   margin-bottom: 8px;
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 140%;
+}
+
+.product-info__review {
+   display: flex;
+   align-items: center;
+   margin-bottom: 40px;
+}
+
+.product-info__review__rate {
+   width: 108px;
+   height: 20px;
+   margin-right: 8px;
+}
+
+.product-info__review__counter {
+   font-family: var(--secondary-font);
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;
+   color: #A9A9A9;
+}
+
+.product-info__text {
+   margin-bottom: 40px;
+   font-family: var(--secondary-font);
+   font-weight: normal;
+   font-size: 17px;
+   line-height: 23px;
+}
+
+
 
 
 
