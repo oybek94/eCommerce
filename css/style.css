@@ -1801,6 +1801,44 @@ img {
 
 
 
+/* PRODUCT INFO PAGE */
+
+/* PRODUCT INFO SECTION */
+
+.product-info {
+   padding: 16px 0;
+}
+
+.product-info__container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.product-info__photos {
+   margin-right: 32px;
+}
+
+.product-info__photos-list {
+   max-width: 569px;
+   padding-left: 0;
+   list-style: none;
+}
+
+.product-info__photos-item:not(:last-child) {
+   margin-bottom: 32px;
+}
+
+.product-info__photos-img {
+   border-radius: 12px;
+   max-width: 569px;
+   height: auto;
+}
+
+
+
+
+
+
 
 
 
