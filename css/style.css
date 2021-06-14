@@ -1872,6 +1872,7 @@ img {
    font-size: 12px;
    line-height: 16px;
    color: #A9A9A9;
+   text-decoration: underline;
 }
 
 .product-info__text {
@@ -1883,11 +1884,117 @@ img {
 }
 
 
+/* PRODUCT INFO DESCRIPTIONS */
+
+.product-info__description {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+
+.product-info__description-column:not(:last-child) {
+   margin-right: 32px;
+}
+
+.product-info__description-list {
+   display: flex;
+   margin-top: 0;
+   margin-bottom: 12px;
+}
+
+.product-info__description-title {
+   width: 100px;
+   font-family: var(--secondary-font);
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   color: #A9A9A9;
+}
+
+.product-info__description-data {
+   font-family: var(--secondary-font);
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+}
+
+.undline {
+   text-decoration: underline;
+}
 
 
+.product-info__purchase {
+   display: flex;
+   align-items: center;
+   padding: 16px;
+   margin-bottom: 24px;
+   border: 1px solid #F5F5F5;
+   border-radius: 12px;
+}
 
+.product-info__purchase-content__prices {
+   display: flex;
+   flex-direction: column;
+}
 
+.product-info__purchase-content__price {
+   margin-right: 90px;
+   font-weight: 600;
+   font-size: 26px;
+   line-height: 39px;
+}
 
+.product-info__purchase-content__unit {
+   display: flex;
+   align-items: center;
+   padding: 14px 16px;
+   background: #F9F9F9;
+   border: 1px solid #D1D1D1;
+   border-radius: 12px;
+   margin-right: auto;
+}
+
+.product-info__purchase-content__pcs {
+   width: 30px;
+   border: none;
+   background-color: transparent;
+   color: #d1d1d1;
+}
+
+.units {
+   border: none;
+   background-color: transparent;
+}
+
+.add-btn {
+   display: flex;
+   align-items: center;
+   padding: 12px 16px;
+   background: #6A983C;
+   border: 2px solid #46760A;
+   box-sizing: border-box;
+   border-radius: 12px;
+   color: #fff;
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 22px;
+   white-space: nowrap;
+}
+
+.btn-icon {
+   margin-right: 6px;
+}
+
+.icon-btn {
+   display: inline-flex;
+   align-items: center;
+   padding: 6px 12px;
+   border: none;
+   background-color: transparent;
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 22px;
+}
 
 
 
