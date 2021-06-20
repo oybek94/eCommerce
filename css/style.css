@@ -1815,11 +1815,11 @@ img {
 }
 
 .product-info__photos {
+   flex: 0 1 100%;
    margin-right: 32px;
 }
 
 .product-info__photos-list {
-   max-width: 569px;
    padding-left: 0;
    list-style: none;
 }
@@ -1830,7 +1830,6 @@ img {
 
 .product-info__photos-img {
    border-radius: 12px;
-   max-width: 569px;
    height: auto;
 }
 
@@ -2138,7 +2137,7 @@ img {
 
 
 @media (max-width: 1120px) {
-   
+
 }
 
 
