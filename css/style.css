@@ -871,7 +871,7 @@ img {
 }
 
 .tips {
-   display: block;
+   display: inline-block;
    width: fit-content;
    padding: 0 8px;
    font-weight: 600;
@@ -1843,7 +1843,7 @@ img {
 }
 
 .product-info__descriptions {
-   margin-bottom: 62px;
+   margin-bottom: 56px;
 }
 
 .product-info__title {
@@ -1995,6 +1995,136 @@ img {
    font-size: 15px;
    line-height: 22px;
 }
+
+
+
+/* TABS */
+
+
+.warpper{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .tabs {
+   border-bottom: 1px solid #F5F5F5;
+ }
+
+ .tab{
+    display:inline-block;
+    width: 32.9%;
+    padding: 0 10px 16px 0 ;
+    color:var(--primary-color);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    cursor: pointer;
+ }
+
+ .tab:not(:first-child) {
+    padding-left: 32px;
+ }
+
+ .panels{
+   width: 100%;
+   padding-top: 48px;  
+ }
+
+ .panel{
+   display:none;
+   animation: fadein .8s;
+ }
+
+ @keyframes fadein {
+     from {
+         opacity:0;
+     }
+     to {
+         opacity:1;
+     }
+ }
+
+ .panel__title{
+   margin-top: 0;
+   margin-bottom: 8px;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 22px;
+ }
+
+ .panel__text {
+   margin-top: 0;
+   margin-bottom: 32px; 
+   font-family: var(--secondary-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+ }
+
+ .radio{
+   display:none;
+ }
+
+ #one:checked ~ .panels #one-panel,
+ #two:checked ~ .panels #two-panel,
+ #three:checked ~ .panels #three-panel{
+   display:block;
+}
+
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+   color:var(--primary-color);
+   border-bottom: 1px solid var(--secondary-color);
+ }
+
+
+ /* TABLE */
+
+ .composition__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.compositions__row:nth-child(even) {
+   background-color: #fdfdfd;
+}
+
+.compositions__row:not(:first-child):hover {
+   background-color: rgb(247, 247, 247);
+}
+
+.compositions__thead {
+   width: 33.33%;
+   padding: 7px 0;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+   text-align: left;
+}
+
+.compositions__thead:not(:first-child),
+.compositions__desc:not(:first-child) {
+   text-align: center;
+}
+
+.compositions__desc {
+   padding: 10px 0;
+   font-family: var(--secondary-font);
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   color: #575757;
+}
+
+
+
+
+
+
+
+
 
 
 
