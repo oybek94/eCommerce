@@ -22,3 +22,7 @@ document.querySelector('.list').addEventListener('click',()=> {
    document.querySelector('.list').classList.add('active');
    document.querySelector('.card__list').classList.add('column');
 });
+
+
+//ADD ID lightSlider WHEN WINDOW SIZE CHANGE TO MOBILE SIZE
+

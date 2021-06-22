@@ -1027,6 +1027,7 @@ img {
 
 .breadcrumb {
    display: flex;
+   flex-wrap: wrap;
    padding: 16px 0;
    list-style: none;
 }
@@ -1859,6 +1860,11 @@ img {
    margin-bottom: 40px;
 }
 
+.product-info__title.hide,
+.product-info__review.hide {
+   display: none;
+}
+
 .product-info__review__rate {
    width: 108px;
    height: 20px;
@@ -2001,90 +2007,92 @@ img {
 /* TABS */
 
 
-.warpper{
-   display:flex;
+.warpper {
+   display: flex;
    flex-direction: column;
    align-items: center;
- }
+}
 
- .tabs {
+.tabs {
+   display: flex;
    border-bottom: 1px solid #F5F5F5;
- }
+}
 
- .tab{
-    display:inline-block;
-    width: 32.9%;
-    padding: 0 10px 16px 0 ;
-    color:var(--primary-color);
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    cursor: pointer;
- }
+.tab {
+   display: inline-block;
+   flex: 0 1 33.33%;
+   padding: 0 10px 16px 0;
+   color: var(--primary-color);
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 27px;
+   cursor: pointer;
+}
 
- .tab:not(:first-child) {
-    padding-left: 32px;
- }
+.tab:not(:first-child) {
+   padding-left: 32px;
+}
 
- .panels{
+.panels {
    width: 100%;
-   padding-top: 48px;  
- }
+   padding-top: 48px;
+}
 
- .panel{
-   display:none;
+.panel {
+   display: none;
    animation: fadein .8s;
- }
+}
 
- @keyframes fadein {
-     from {
-         opacity:0;
-     }
-     to {
-         opacity:1;
-     }
- }
+@keyframes fadein {
+   from {
+      opacity: 0;
+   }
 
- .panel__title{
+   to {
+      opacity: 1;
+   }
+}
+
+.panel__title {
    margin-top: 0;
    margin-bottom: 8px;
    font-weight: 500;
    font-size: 15px;
    line-height: 22px;
- }
-
- .panel__text {
-   margin-top: 0;
-   margin-bottom: 32px; 
-   font-family: var(--secondary-font);
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
- }
-
- .radio{
-   display:none;
- }
-
- #one:checked ~ .panels #one-panel,
- #two:checked ~ .panels #two-panel,
- #three:checked ~ .panels #three-panel{
-   display:block;
 }
 
-#one:checked ~ .tabs #one-tab,
-#two:checked ~ .tabs #two-tab,
-#three:checked ~ .tabs #three-tab{
-   color:var(--primary-color);
+.panel__text {
+   margin-top: 0;
+   margin-bottom: 32px;
+   font-family: var(--secondary-font);
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+}
+
+.radio {
+   display: none;
+}
+
+#one:checked~.panels #one-panel,
+#two:checked~.panels #two-panel,
+#three:checked~.panels #three-panel {
+   display: block;
+}
+
+#one:checked~.tabs #one-tab,
+#two:checked~.tabs #two-tab,
+#three:checked~.tabs #three-tab {
+   color: var(--primary-color);
    border-bottom: 1px solid var(--secondary-color);
- }
+}
 
 
- /* TABLE */
+/* TABLE */
 
- .composition__table {
-    width: 100%;
-    border-collapse: collapse;
+.composition__table {
+   width: 100%;
+   border-collapse: collapse;
 }
 
 .compositions__row:nth-child(even) {
@@ -2136,9 +2144,7 @@ img {
 
 
 
-@media (max-width: 1120px) {
 
-}
 
 
 @media (max-width: 910px) {
@@ -2152,6 +2158,10 @@ img {
 
    .card__item {
       margin-left: 0;
+   }
+
+   .tab:not(:first-child) {
+      padding-left: 20px;
    }
 }
 
@@ -2366,6 +2376,31 @@ img {
       font-size: 24px;
    }
 
+
+
+
+
+   /* PRODUCT PAGE */
+
+   /* PRODUCT INFO */
+
+   .product-info__container {
+      flex-direction: column;
+   }
+
+   .product-info__title,
+   .product-info__review {
+      display: none;
+   }
+
+   .product-info__title.hide,
+   .product-info__review.hide {
+      display: block;
+   }
+
+   .product-info__review.hide {
+      margin-bottom: 12px;
+   }
 }
 
 
@@ -2675,6 +2710,43 @@ img {
 
    .view-btn:first-child {
       margin-left: 0;
+   }
+
+
+   .product-info__title {
+      font-size: 24px;
+   }
+
+   .product-info__photos {
+      margin-right: 0;
+   }
+
+   .product-info__description {
+      flex-direction: column;
+   }
+
+   .product-info__purchase {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .product-info__purchase-content__prices,
+   .product-info__purchase-content__unit {
+      margin-bottom: 10px;
+   }
+
+   .add-btn {
+      width: 100%;
+      justify-content: center;
+   }
+
+   .tab {
+      font-size: 14px;
+   }
+
+   .tab:not(:first-child) {
+      padding-left: 0;
+
    }
 
 }
