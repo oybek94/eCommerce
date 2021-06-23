@@ -2201,10 +2201,15 @@ img {
 
 /* BLOG PAGE */
 
+.blogs {
+   padding: 48px 0;
+}
+
 /* HERO SECTION */
 
 .hero {
    padding: 48px 0;
+   margin-bottom: 100px;
 }
 
 .hero__container {
