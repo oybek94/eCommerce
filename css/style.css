@@ -1396,8 +1396,6 @@ img {
 
 /* PRODUCTS LIST SECTION */
 
-.products-list {}
-
 .products-list__container {
    display: flex;
 }
@@ -2222,6 +2220,18 @@ img {
    padding-right: 141px;
 }
 
+/* SECTION MENU */
+
+.section-menus {
+   flex: 0 1 269px;
+   margin-right: 32px;
+}
+
+.blogs .section-menu {
+   width: auto;   
+   margin-right: 0;
+}
+
 .section-menu__link.disabled {
    font-family: var(--secondary-font);
    font-weight: normal;
@@ -2259,7 +2269,8 @@ img {
 }
 
 .join-form {
-   padding: 3px 16px 3px 21px;
+   width: 269px;
+   padding: 3px 0px 3px 21px;
    background: #F9F9F9;
    border: 1px solid #D1D1D1;
    box-sizing: border-box;
@@ -2287,6 +2298,28 @@ img {
    font-size: 15px;
    line-height: 22px;
    color: #151515;
+}
+
+
+/* POSTS SECTION */
+
+.blogs__container {
+   display: flex;
+}
+
+.posts-list {
+   display: flex;
+   flex: 0 1 33%;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   padding-left: 0;
+   list-style: none;
+}
+
+.posts-list .vertical-card {
+   margin-right: 10px;
+   margin-bottom: 32px;
 }
 
 
@@ -2388,6 +2421,18 @@ img {
 
 
 
+
+@media (max-width: 890px) {
+   .blogs__container {
+      flex-direction: column-reverse;
+   }
+
+   .section-menus {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+}
 
 
 /* Landscape phones and portrait tablets */
@@ -2626,6 +2671,26 @@ img {
 
 
 
+
+@media (max-width: 650px) {
+   .posts-list {
+      flex-direction: column;
+   }
+
+   .posts-list .vertical-card {
+      margin-right: 0;
+      max-width: 100%;
+   }
+   
+   .posts-list .vertical-card__photo {
+      width: 540px;
+      height: auto;
+   }
+
+   .posts-list .vertical-card__tips {
+      text-align: left;
+   }
+}
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
@@ -2936,6 +3001,16 @@ img {
 
    .show-more {
       display: none;
+   }
+
+
+
+   /* BLOG PAGE */
+
+   /* SECTION MENUS */
+
+   .section-menus {
+      flex-wrap: wrap;
    }
 
 }
