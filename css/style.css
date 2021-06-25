@@ -2363,9 +2363,8 @@ img {
    display: flex;
    flex-direction: row-reverse;
    max-width: 769px;
-   padding-left: 10px;
-   padding-right: 10px;
-   margin-bottom: 32px;
+   margin-bottom: 25px;
+   padding: 0 10px;
 }
 
 .post__hero-content__title {
@@ -2423,13 +2422,12 @@ img {
 }
 
 .post__info-sidebar {
-   flex: 1 0 169px;
-   display: block;
    margin-right: 32px;
 }
 
 .sidebar-tags {
    margin-bottom: 48px;
+   width: 169px;
 }
 
 .sidebar-tags__item {
@@ -2468,6 +2466,7 @@ img {
 
 .post__info-content {
    margin-bottom: 48px;
+   max-width: 549px;
 }
 
 .post__info-content__text {
@@ -2565,6 +2564,137 @@ img {
 
 .post__social-link:hover.linkedin.post__social-link::before {
    background-image: url("/img/icons/linkedin-hover.svg");
+}
+
+
+
+/* COMMENT FORM */
+
+.comments__title {
+   margin-top: 0;
+   margin-bottom: 12px;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 33px;
+}
+
+.comments__text {
+   margin-top: 0;
+   margin-bottom: 16px;
+   font-family: var(--secondary-font);
+   font-weight: normal;
+   font-size: 17px;
+   line-height: 23px;
+}
+
+.comments__text a {
+   color: var(--primary-color);
+}
+
+.comment__container {
+   display: flex;
+   max-width: 770px;
+}
+
+.comments__content {
+   width: 100%;
+}
+
+.comment__sidebar {
+   width: 189px;
+   margin-right: 45px;
+}
+
+.comment-form {
+   display: flex;
+   margin-bottom: 32px;
+   width: 100%;
+}
+
+.comment-form__label {
+   display: flex;
+   flex: 0 1 50%;
+   flex-direction: column;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+}
+
+.comment-form__label:first-child {
+   margin-right: 32px;
+}
+
+.comment-form__input {
+   padding: 11px 16px 12px 21px;
+   background: #F9F9F9;
+   border: 1px solid #D1D1D1;
+   border-radius: 12px;
+   font-family: var(--secondary-font);
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 19px;
+   color: var(--primary-color);
+}
+
+.comment-form__input::placeholder {
+   color: #A9A9A9;
+   font-weight: 400;
+}
+
+.comment-form__checkbox-label {
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 9px 16px;
+   margin-bottom: 32px;
+   border-radius: 12px;
+   background-color: #F9F9F9;
+   font-family: var(--secondary-font);
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 19px;
+   border: 1px solid #D1D1D1;
+   cursor: pointer;
+}
+
+.comment-form__checkbox {
+   margin-right: 8px;
+   width: 20px;
+   height: 20px;
+   padding: 2px;
+   cursor: pointer;
+}
+
+.comment-form__textarea {
+   display: flex;
+   justify-content: stretch;
+   width: 100%;
+   padding: 11px 16px 12px 21px;
+   margin-bottom: 32px;
+   background: #F9F9F9;
+   border: 1px solid #D1D1D1;
+   box-sizing: border-box;
+   border-radius: 12px;
+   height: 112px;
+}
+
+.comment__btn {
+   background: var(--secondary-color);
+   border: 2px solid #46760A;
+   box-sizing: border-box;
+   border-radius: 12px;
+   padding: 12px 48px;
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 22px;
+   color: #FFFFFF;
+   transition: background-color .3s ease;
+}
+
+.comment__btn:hover {
+   color: var(--secondary-color);
+   background-color: transparent;
 }
 
 
