@@ -2337,13 +2337,13 @@ img {
    padding: 48px 0;
 }
 
+
 .post__hero-content {
    position: relative;
    display: flex;
    flex-direction: row-reverse;
    align-items: flex-end;
    justify-content: center;
-   max-width: 1170px;
    height: 480px;
    color: #fff;
    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
@@ -2362,7 +2362,9 @@ img {
 .post__hero-content__info {
    display: flex;
    flex-direction: row-reverse;
-   width: 769px;
+   max-width: 769px;
+   padding-left: 10px;
+   padding-right: 10px;
    margin-bottom: 32px;
 }
 
@@ -2412,7 +2414,158 @@ img {
 }
 
 
+/*POST PAGE`S SIDEBAR*/
 
+.post__info__container {
+   display: flex;
+   flex-direction: row-reverse;
+   max-width: 769px;
+}
+
+.post__info-sidebar {
+   flex: 1 0 169px;
+   display: block;
+   margin-right: 32px;
+}
+
+.sidebar-tags {
+   margin-bottom: 48px;
+}
+
+.sidebar-tags__item {
+   margin-right: 8px;
+   margin-bottom: 8px;
+}
+
+.sidebar-tags__link {
+   background: #F4F8EC;
+   border-radius: 12px;
+   color: #6A983C;
+}
+
+.back-btn {
+   position: relative;
+   padding: 6px 0 0 22px;
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 22px;
+   color: var(--primary-color);
+   text-decoration: none;
+}
+
+.back-btn::before {
+   content: '';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   background: url("/img/icons/back-icon.svg") no-repeat center center;
+   left: 0;
+}
+
+
+
+/* POST INFO CONTENT */
+
+.post__info-content {
+   margin-bottom: 48px;
+}
+
+.post__info-content__text {
+   margin-top: 0;
+   margin-bottom: 31px;
+   font-family: var(--secondary-font);
+   font-weight: normal;
+   font-size: 17px;
+   line-height: 23px;
+}
+
+.post__info-content__title {
+   margin-top: 0;
+   margin-bottom: 12px;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 27px;
+}
+
+.indent {
+   margin-bottom: 48px;
+}
+
+
+/* POST`S SOCIAL */
+
+.post__socials {
+   display: flex;
+   align-items: center;
+}
+
+.post__socials-title {
+   margin-bottom: 0;
+}
+
+.post__social-list {
+   display: flex;
+   align-items: center;
+   padding-left: 0;
+   list-style: none;
+}
+
+.post__social-link {
+   position: relative;
+   padding: 6px 12px 6px 34px;
+   margin-left: 16px;
+   background: #F5F5F5;
+   border-radius: 12px;
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 22px;
+   color: #151515;
+   text-decoration: none;
+   white-space: nowrap;
+}
+
+.post__social-link::before {
+   content: '';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   top: 8px;
+   left: 12px;
+   background-position: center center;
+   background-repeat: no-repeat;
+}
+
+.facebook.post__social-link::before {
+   background-image: url("/img/icons/Facebook.svg");
+}
+
+.pinterest.post__social-link::before {
+   background-image: url("/img/icons/Pinterest.svg");
+} 
+
+.twitter.post__social-link::before {
+   background-image: url("/img/icons/Twitter.svg");
+}
+
+.linkedin.post__social-link::before {
+   background-image: url("/img/icons/LinkedIn.svg");
+}
+
+.post__social-link:hover.facebook.post__social-link::before {
+   background-image: url("/img/icons/Facebook-hover.svg");
+}
+
+.post__social-link:hover.pinterest.post__social-link::before {
+   background-image: url("/img/icons/pinterest-hover.svg");
+}
+
+.post__social-link:hover.twitter.post__social-link::before {
+   background-image: url("/img/icons/twitter-hover.svg");
+}
+
+.post__social-link:hover.linkedin.post__social-link::before {
+   background-image: url("/img/icons/linkedin-hover.svg");
+}
 
 
 
@@ -2441,6 +2594,10 @@ img {
 
    .tab:not(:first-child) {
       padding-left: 20px;
+   }
+
+   .post__info-sidebar {
+      flex: 0 1 169px;
    }
 }
 
@@ -2749,6 +2906,31 @@ img {
 
    .hero__desc-data {
       margin-right: 25px;
+   }
+
+
+   /* POST PAGE`S INFO CONTENT */
+
+   .post__info__container {
+      flex-direction: column;
+   }
+
+   .post__socials {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .post__social-list {
+      flex-wrap: wrap;
+   }
+
+   .post__social-item {
+      margin-bottom: 20px;
+      margin-right: 16px;
+   }
+
+   .post__social-link {
+      margin-left: 0;
    }
 }
 
