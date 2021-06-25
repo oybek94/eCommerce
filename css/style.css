@@ -2375,11 +2375,19 @@ img {
    color: #FFFFFF;
 }
 
-.hero__desc-list {
-   padding-left: 25px;
-   margin-top: auto;
-   margin-bottom: 0;
+.post__hero-content__inner {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
    margin-right: 32px;
+}
+
+.hero__desc-list {
+   display: flex;
+   width: 168px;
+   padding-left: 0px;
+   margin-bottom: 0;
+   margin-top: 0;
 }
 
 .hero__desc-title {
@@ -2515,10 +2523,8 @@ img {
       margin-left: 16px;
    }
 
-   /*.section-posts {
-      margin-left: 0;
-   }*/
 }
+
 
 
 /* Landscape phones and portrait tablets */
@@ -2717,6 +2723,33 @@ img {
    .hero .blog-posts__info {
       padding-right: 0;
    }
+
+   /* POST PAGE */
+
+   .post__hero-content__inner {
+      flex-direction: row;
+      justify-content: flex-start;
+   }
+
+   .post__hero-content__info {
+      flex-direction: column;
+      padding: 0 25px;
+   }
+
+   .hero__desc-list {
+      display: block;
+      padding-left: 0;
+      margin-right: 0;
+   }
+
+   .hero__desc-title {
+      width: auto;
+      margin-right: 8px;
+   }
+
+   .hero__desc-data {
+      margin-right: 25px;
+   }
 }
 
 
@@ -2748,17 +2781,10 @@ img {
       text-align: left;
    }
 
-
    .view-form {
       display: none;
    }
 
-}
-
-
-
-
-@media (max-width: 650px) {
    .posts-list {
       flex-direction: column;
    }
@@ -2776,7 +2802,25 @@ img {
    .posts-list .vertical-card__tips {
       text-align: left;
    }
+
+   .post__hero-content__inner {
+      display: flex;
+      margin-right: 0;
+   }
+
+   .hero__desc-list {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 33.33%;
+      width: 100%;
+   }
+
+   .hero__desc-title:not(:last-child) {
+      margin-bottom: 4px;
+   }
 }
+
+
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
@@ -3099,9 +3143,40 @@ img {
       flex-wrap: wrap;
    }
 
+
+   /* POST PAGE */
+
+   .hero__desc-list {
+      display: flex;
+   }
+
+   .post__hero-content__photo,
+   .post__hero-content {
+      height: 350px;
+      flex: 0 1 33.33%;
+   }
+
+   .post__hero-content__title {
+      font-size: 24px;
+   }
+
+   .hero__desc-title {
+      display: block;
+   }
+
+   .hero__desc-title:not(:last-child) {
+      margin-bottom: 0;
+   }
+
+   .hero__desc-data {
+      margin-bottom: 8px;
+   }
 }
 
+
+
 @media (max-width: 350px) {
+   
    .widget:not(:last-child) {
       margin-right: 5px;
    }
@@ -3127,7 +3202,16 @@ img {
       font-size: 16px;
    }
 
-}
+   .post__hero-content__info {
+      padding: 0 10px;
+   }
 
-/* Iphone 5 */
-@media (max-width: 320px) {}
+   .post__hero-content__title {
+      font-size: 18px;
+      margin-bottom: 4px;
+   }
+
+   .post__hero-content__photo, .post__hero-content {
+      height: 230px;
+   }
+}
