@@ -3062,6 +3062,14 @@ img {
    .post__social-link {
       margin-left: 0;
    }
+
+
+
+   /* COMMENTS FORM */
+
+   .comment__sidebar {
+      display: none;
+   }
 }
 
 
@@ -3483,6 +3491,19 @@ img {
    .hero__desc-data {
       margin-bottom: 8px;
    }
+
+   .comment-form {
+      flex-direction: column;
+   }
+
+   .comment-form__label:first-child {
+      margin-right: 0;
+      margin-bottom: 16px;
+   }
+
+   
+
+
 }
 
 
