@@ -1565,7 +1565,7 @@ img {
 }
 
 .special {
-   color: var(--secondary-color);
+   color: var(--secondary-color)!important;
 }
 
 
@@ -1974,6 +1974,10 @@ img {
 .units {
    border: none;
    background-color: transparent;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+   color: #151515;
 }
 
 .add-btn {
@@ -2843,9 +2847,210 @@ img {
    color: #A9A9A9;
 }
 
+.ordered-products__list {
+   padding-left: 0;
+   margin-top: 0;
+   margin-bottom: 40px;
+   list-style: none;
+}
+
+.ordered-products__item {
+   display: flex;
+   border-bottom: 1px solid #F9F9F9;
+}
+
+.ordered-products__item:not(:last-child) {
+   margin-bottom: 32px;
+}
+
+.ordered-products__header {
+   margin-right: 16px;
+}
+
+.ordered-products__photo {
+   width: 100px;
+   height: 67px;
+   border-radius: 12px;
+   margin-bottom: 12px;
+}
+
+.ordered-products__buttons {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.order-btn {
+   display: flex;
+   margin-bottom: 8px;
+   font-family: var(--secondary-font);
+   font-size: 12px;
+   line-height: 16px;
+   color: #A9A9A9;
+   border: none;
+   background-color: transparent;
+}
+
+.order-btn:hover {
+   color: var(--primary-color);
+}
+
+.order-btn__icon {
+   margin-top: 2px;
+   margin-right: 6px;
+}
+
+.ordered-products__content {
+   flex-grow: 1;
+   margin-bottom: 16px;
+}
+
+.ordered-products__info {
+   margin-bottom: 16px;
+}
+
+.ordered-products__name {
+   margin-top: 0;
+   margin-bottom: 4px;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 22px;
+   color: #151515;
+}
+
+.ordered-products__desc-list {
+   display: flex;
+   margin-top: 0;
+   margin-bottom: 4px;
+}
+
+.ordered-products__desc-term {
+   width: 74px;
+   font-family: var(--secondary-font);
+   font-size: 12px;
+   line-height: 16px;
+   color: #A9A9A9;
+}
+
+.ordered-products__desc-data {
+   font-family: var(--secondary-font);
+   font-size: 12px;
+   line-height: 16px;
+   margin-left: 0;
+}
+
+.ordered-products__info .rate {
+   margin-top: 7px;
+}
+
+.ordered-products__price {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.ordered-product__price {
+   font-size: 18px;
+   line-height: 27px;
+}
+
+.ordered-products__form {
+   padding: 6px;
+   margin-right: 0;
+}
+
+.ordered-products__input {
+   width: 35px;
+   font-family: var(--secondary-font);
+   font-size: 14px;
+   line-height: 19px;
+   margin-right: 6px;
+}
+
+.product-info__purchase-content__pcs::-webkit-outer-spin-button,
+.product-info__purchase-content__pcs::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ordered-products__form .vertical-line {
+   margin-right: 6px;
+}
 
 
+/* INVOICE */
 
+.invoice {
+   margin-bottom: 40px;
+}
+
+.invoice-info {
+   margin-bottom: 32px;
+}
+
+.invoice-info__desc-list {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.invoice-info__desc-list:not(:last-child) {
+   margin-bottom: 12px;
+}
+
+.invoice-info__desc-term {
+   width: 60px;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+}
+
+.invoice-info__desc-data {
+   margin-left: 0;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+}
+
+
+/* PROMO CODE */
+
+.promo-code__label {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 11px 16px 12px 21px;
+   margin-bottom: 40px;
+   background-color: #f9f9f9;
+   border-radius: 12px;
+}
+
+.promo-code__input {
+   width: 100%;
+   border: none;
+   background-color: transparent;
+}
+
+.promo-code__btn {
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 22px;
+   background-color: transparent;
+   border:none;
+}
+
+.promo-code__btn:hover {
+   color: rgba(21, 21, 21, 80%);
+}
+
+.order__footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
 
 
 

@@ -265,7 +265,8 @@
                               <dl class="ordered-products__desc-list">
                                  <dt class="ordered-products__desc-term">Farm:</dt>
                                  <dd class="ordered-products__desc-data">Tharamis Farm</dd>
-
+                              </dl>
+                              <dl class="ordered-products__desc-list">
                                  <dt class="ordered-products__desc-term">Freshness:</dt>
                                  <dd class="ordered-products__desc-data">1 day old</dd>
                               </dl>
@@ -273,15 +274,75 @@
                            </div>
 
                            <div class="ordered-products__price">
-                              <div class="product-info__purchase-content__prices ordered-products__price-info">
+                              <div class="product-info__purchase-content__prices">
                                  <span
                                     class="product-info__purchase-content__price special ordered-product__price">36.23
                                     USD</span>
                                  <span class="product-info__purchase-content__discount card__discount">48.56</span>
                               </div>
 
-                              <form class="product-info__purchase-content__unit">
-                                 <input class="product-info__purchase-content__pcs" type="number" placeholder="1 pcs">
+                              <form class="product-info__purchase-content__unit ordered-products__form">
+                                 <input class="product-info__purchase-content__pcs ordered-products__input"
+                                    type="number" placeholder="1pcs">
+                                 <span class="vertical-line"></span>
+                                 <select class="units" name="units" id="units">
+                                    <option value="pcs">Pcs</option>
+                                    <option value="kg">Kg</option>
+                                    <option value="lbs">Lbs</option>
+                                 </select>
+                              </form>
+                           </div>
+                        </div>
+                     </li>
+
+                     <li class="ordered-products__item">
+                        <header class="ordered-products__header">
+                           <img class="ordered-products__photo" src="/img/photos/order-bg.png"
+                              alt="ordered produc photo" width="100" height="67">
+                           <div class="ordered-products__buttons">
+                              <button class="order-btn">
+                                 <img class="order-btn__icon" src="/img/icons/favourite.svg" alt="favourite icon"
+                                    width="12" height="12">
+                                 Wishlist
+                              </button>
+                              <button class="order-btn">
+                                 <img class="order-btn__icon" src="/img/icons/compare-small.svg" alt="favourite icon"
+                                    width="12" height="12">
+                                 Compare
+                              </button>
+                              <button class="order-btn">
+                                 <img class="order-btn__icon" src="/img/icons/remove.svg" alt="favourite icon"
+                                    width="12" height="12">
+                                 Remove
+                              </button>
+                           </div>
+                        </header>
+
+                        <div class="ordered-products__content">
+                           <div class="ordered-products__info">
+                              <h4 class="ordered-products__name">Product title</h4>
+                              <dl class="ordered-products__desc-list">
+                                 <dt class="ordered-products__desc-term">Farm:</dt>
+                                 <dd class="ordered-products__desc-data">Tharamis Farm</dd>
+                              </dl>
+                              <dl class="ordered-products__desc-list">
+                                 <dt class="ordered-products__desc-term">Freshness:</dt>
+                                 <dd class="ordered-products__desc-data">1 day old</dd>
+                              </dl>
+                              <img class="rate" src="/img/icons/rate-4.png" alt="rate-4" width="88" height="16">
+                           </div>
+
+                           <div class="ordered-products__price">
+                              <div class="product-info__purchase-content__prices">
+                                 <span
+                                    class="product-info__purchase-content__price special ordered-product__price">36.23
+                                    USD</span>
+                                 <span class="product-info__purchase-content__discount card__discount">48.56</span>
+                              </div>
+
+                              <form class="product-info__purchase-content__unit ordered-products__form">
+                                 <input class="product-info__purchase-content__pcs ordered-products__input"
+                                    type="number" placeholder="1pcs">
                                  <span class="vertical-line"></span>
                                  <select class="units" name="units" id="units">
                                     <option value="pcs">Pcs</option>
@@ -294,6 +355,40 @@
                      </li>
                   </ul>
                </div>
+
+               <div class="invoice">
+                  <div class="invoice-info">
+                     <dl class="invoice-info__desc-list">
+                        <dt class="invoice-info__desc-term">Subtotal</dt>
+                        <dd class="invoice-info__desc-data">73.98 USD</dd>
+                     </dl>
+
+                     <dl class="invoice-info__desc-list">
+                        <dt class="invoice-info__desc-term">Tax</dt>
+                        <dd class="invoice-info__desc-data">17% 16.53 USD</dd>
+                     </dl>
+
+                     <dl class="invoice-info__desc-list">
+                        <dt class="invoice-info__desc-term">Shipping</dt>
+                        <dd class="invoice-info__desc-data">0 USD</dd>
+                     </dl>
+                  </div>
+               </div>
+
+               <form class="promo-code">
+                  <label class="promo-code__label" for="promo-code">
+                     <input class="promo-code__input" id="promo-code" type="text" placeholder="Apply promo code">
+                     <input class="promo-code__btn" type="submit" id="promo-code" value="Apply now">
+                  </label>
+               </form>
+
+               <footer class="order__footer">
+                  <div class="order__footer-info">
+                     <span class="invoice-info__desc-term">Total Order</span>
+                     <p class="billing-form__text special">Guaranteed delivery day: June 12, 2020</p>
+                  </div>
+                  <span class="product-info__purchase-content__price special">36.23 USD</span>
+               </footer>
             </div>
          </div>
       </section>
