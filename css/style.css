@@ -2780,6 +2780,27 @@ img {
 }
 
 
+/* RELATED TOPICS */
+
+.related-topics {
+   overflow: auto;
+}
+
+.related-topics__list {
+   display: flex;
+   padding-left: 0;
+   margin: 0;
+   list-style: none;
+}
+
+.related-topics__list .vertical-card__photo {
+   max-width: 269px;
+}
+
+.related-topics__list .vertical-card {
+   margin-right: 31px;
+}
+
 
 
 
@@ -3593,6 +3614,12 @@ img {
 
 
 
+   /* RELATED TOPICS */
+
+   .related-topics__list .vertical-card__photo {
+      width: 229px;
+      margin-right: 16px;
+   }
 
 }
 
