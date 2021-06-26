@@ -215,7 +215,89 @@
       </div>
    </header>
 
+   <main class="main">
+      <header class="main__header">
+         <div class="main__header__container container">
+            <ul class="breadcrumb">
+               <li class="breadcrumb-item"><a href="/index.html" class="breadcrumb-link">Homepage</a></li>
+               <li class="breadcrumb-item">Checkout page</li>
+            </ul>
+         </div>
+      </header>
 
+      <section class="billing-wrapper">
+         <div class="billing-wrapper__container container">
+            <div class="orders">
+               <div class="orders__billing-form__wrapper ">
+                  <h3 class="billing-form__title">Order Summary</h3>
+                  <p class="billing-form__text">Price can change depending on shipping method and taxes of your state.
+                  </p>
+               </div>
+
+               <div class="ordered-products">
+                  <ul class="ordered-products__list">
+                     <li class="ordered-products__item">
+                        <header class="ordered-products__header">
+                           <img class="ordered-products__photo" src="/img/photos/order-bg.png"
+                              alt="ordered produc photo" width="100" height="67">
+                           <div class="ordered-products__buttons">
+                              <button class="order-btn">
+                                 <img class="order-btn__icon" src="/img/icons/favourite.svg" alt="favourite icon"
+                                    width="12" height="12">
+                                 Wishlist
+                              </button>
+                              <button class="order-btn">
+                                 <img class="order-btn__icon" src="/img/icons/compare-small.svg" alt="favourite icon"
+                                    width="12" height="12">
+                                 Compare
+                              </button>
+                              <button class="order-btn">
+                                 <img class="order-btn__icon" src="/img/icons/remove.svg" alt="favourite icon"
+                                    width="12" height="12">
+                                 Remove
+                              </button>
+                           </div>
+                        </header>
+
+                        <div class="ordered-products__content">
+                           <div class="ordered-products__info">
+                              <h4 class="ordered-products__name">Product title</h4>
+                              <dl class="ordered-products__desc-list">
+                                 <dt class="ordered-products__desc-term">Farm:</dt>
+                                 <dd class="ordered-products__desc-data">Tharamis Farm</dd>
+
+                                 <dt class="ordered-products__desc-term">Freshness:</dt>
+                                 <dd class="ordered-products__desc-data">1 day old</dd>
+                              </dl>
+                              <img class="rate" src="/img/icons/rate-4.png" alt="rate-4" width="88" height="16">
+                           </div>
+
+                           <div class="ordered-products__price">
+                              <div class="product-info__purchase-content__prices ordered-products__price-info">
+                                 <span
+                                    class="product-info__purchase-content__price special ordered-product__price">36.23
+                                    USD</span>
+                                 <span class="product-info__purchase-content__discount card__discount">48.56</span>
+                              </div>
+
+                              <form class="product-info__purchase-content__unit">
+                                 <input class="product-info__purchase-content__pcs" type="number" placeholder="1 pcs">
+                                 <span class="vertical-line"></span>
+                                 <select class="units" name="units" id="units">
+                                    <option value="pcs">Pcs</option>
+                                    <option value="kg">Kg</option>
+                                    <option value="lbs">Lbs</option>
+                                 </select>
+                              </form>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
 
    <footer class="footer">
       <section class="footer-links">

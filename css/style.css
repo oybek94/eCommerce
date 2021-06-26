@@ -2805,6 +2805,48 @@ img {
 
 
 
+/* BILLING PAGE */
+
+/* ORDER SECTION */
+
+.billing-wrapper__container {
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.orders {
+   max-width: 468px;
+   padding: 32px 16px;
+   background: #FFFFFF;
+   border: 1px solid #D1D1D1;
+   box-sizing: border-box;
+   border-radius: 12px;
+}
+
+.orders__billing-form__wrapper {
+   margin-bottom: 40px;
+}
+
+.billing-form__title {
+   margin-bottom: 4px;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 33px;
+}
+
+.billing-form__text {
+   margin-top: 0;
+   margin-bottom: 0;
+   font-family: var(--secondary-font);
+   font-size: 12px;
+   line-height: 16px;
+   color: #A9A9A9;
+}
+
+
+
+
+
 
 
 
@@ -2892,7 +2934,6 @@ img {
       padding-right: 0;
    }
 }
-
 
 
 
